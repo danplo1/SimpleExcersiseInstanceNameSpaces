@@ -4,20 +4,7 @@
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="someLocale" class="java.util.Locale" factory-method="getDeafult"/>
-    <bean id="someUser" class="nameSpaces.User.java">
-        <constructor-arg value="Joanna"/>
-        <constructor-arg value="22"/>
-        <constructor-arg ref="someLocale"/>
+  <bean id="someString" class="java.lang.String"/>
 
-    </bean>
-
-
-    <bean id="someBean" class="nameSpaces.SomeBean">
-        <property name="stringValue" value="some string value"/>
-        <property name="intValue" value="100"/>
-
-
-    </bean>
 
 </beans>

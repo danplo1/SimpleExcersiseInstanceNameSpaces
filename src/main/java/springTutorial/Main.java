@@ -9,10 +9,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("/context");
+        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-        User user = context.getBean("someUser", User.class);
-        System.out.println(user);
+        String myString = context.getBean("someString", String.class);
+        System.out.println(myString);
 
 
     }
