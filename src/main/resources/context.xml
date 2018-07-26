@@ -4,7 +4,20 @@
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="someString" class="java.lang.String"/>
+  <bean id="address" class="main.springTutorial.Address">
+    <constructor-arg value="Wrocław"/>
+    <constructor-arg value="50-001"/>
+    <constructor-arg value="Rynek"/>
+    <constructor-arg value="1"/>
+
+  </bean>
+
+  <bean id="user" class="main.springTutorial.User">
+    <property name="name" value="Tomek"/>
+    <property name="address" ref="address"/>
+  </bean >
+
+
 
 
 </beans>
